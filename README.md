@@ -1,0 +1,3 @@
+# Purescript Boggle
+
+Purescript Boggle.
