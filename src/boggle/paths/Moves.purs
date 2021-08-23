@@ -1,7 +1,6 @@
-module Move where
+module Boggle.Paths.Moves where
 
 import Prelude
-import Sequences (nTuples)
 
 data Move
   = R
@@ -45,6 +44,3 @@ instance eqMove :: Eq Move where
   eq DR DR = true
   eq DL DL = true
   eq _ _ = false
-
-generateMoves :: Int -> Array (Array Move)
-generateMoves = nTuples moveSingletons

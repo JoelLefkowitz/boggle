@@ -1,63 +1,18 @@
-module Test.Sequences where
+module Test.Boggle.Utils.Sequences where
 
 import Prelude
+
+import Boggle.Utils.Sequences (nFiltered, nTuples, product)
 import Effect (Effect)
-import Sequences (addMap, fill, filteredTuples, nTuples, product, range)
+import Effect.Console (log)
 import Test.Assert (assertEqual)
 
 testSequences :: Effect Unit
 testSequences = do
-  testAddMap
-  testRange
-  testFill
+  log "Running testSequences"
   testProduct
   testNTuples
-  testFilteredTuples
-
-testAddMap :: Effect Unit
-testAddMap = do
-  assertEqual
-    { actual: addMap [ 1, 2, 3 ] 1
-    , expected: [ 2, 3, 4 ]
-    }
-
-testRange :: Effect Unit
-testRange = do
-  assertEqual
-    { actual: range 0 0
-    , expected: []
-    }
-  assertEqual
-    { actual: range 1 1
-    , expected: []
-    }
-  assertEqual
-    { actual: range 0 1
-    , expected: [ 0 ]
-    }
-  assertEqual
-    { actual: range 0 2
-    , expected: [ 0, 1 ]
-    }
-  assertEqual
-    { actual: range 1 3
-    , expected: [ 1, 2 ]
-    }
-  assertEqual
-    { actual: range 2 5
-    , expected: [ 2, 3, 4 ]
-    }
-
-testFill :: Effect Unit
-testFill = do
-  assertEqual
-    { actual: fill 1 2
-    , expected: [ 1, 1 ]
-    }
-  assertEqual
-    { actual: fill [ 1 ] 2
-    , expected: [ [ 1 ], [ 1 ] ]
-    }
+  testNFiltered
 
 testProduct :: Effect Unit
 testProduct = do
@@ -97,13 +52,13 @@ testNTuples = do
     , expected: [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
     }
 
-testFilteredTuples :: Effect Unit
-testFilteredTuples = do
+testNFiltered :: Effect Unit
+testNFiltered = do
   assertEqual
-    { actual: filteredTuples (\x -> x /= "a") [ "a", "b" ] 1
+    { actual: nFiltered (\x -> x /= "a") [ "a", "b" ] 1
     , expected: [ "b" ]
     }
   assertEqual
-    { actual: filteredTuples (\x -> x /= [ 1, 1 ]) [ [ 1 ], [ 2 ] ] 2
+    { actual: nFiltered (\x -> x /= [ 1, 1 ]) [ [ 1 ], [ 2 ] ] 2
     , expected: [ [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
     }

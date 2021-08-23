@@ -2,16 +2,22 @@ module Test.Main where
 
 import Prelude
 import Effect (Effect)
-import Test.Boggle (testBoggle)
-import Test.Paths (testPaths)
-import Test.Linear (testLinear)
-import Test.Sequences (testSequences)
-import Test.Move (testMove)
+import Test.Boggle.Paths.Boundaries (testBoundaries)
+import Test.Boggle.Paths.Coordinates (testCoordinates)
+import Test.Boggle.Paths.Moves (testMoves)
+import Test.Boggle.Rules (testRules)
+import Test.Boggle.Solve (testSolve)
+import Test.Boggle.Utils.Arrays (testArrays)
+import Test.Boggle.Utils.NonEmpty (testNonEmpty)
+import Test.Boggle.Utils.Sequences (testSequences)
 
 main :: Effect Unit
 main = do
-  testBoggle
-  testPaths
-  testLinear
-  testMove
+  testArrays
+  testBoundaries
+  testCoordinates
+  testMoves
+  testNonEmpty
+  testRules
   testSequences
+  testSolve
