@@ -13,7 +13,6 @@ testLinear = log "Skipping testLinear"
 -- testLinear = do
 --   testVerifyLinear
 --   testGenerateLinear
-
 testVerifyLinear :: Effect Unit
 testVerifyLinear = do
   assertEqual

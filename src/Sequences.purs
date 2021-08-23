@@ -1,8 +1,25 @@
 module Sequences where
 
 import Prelude
-import Data.Array (foldl, filter)
-import Data.Array.NonEmpty (cons, head, singleton, toArray, NonEmptyArray)
+import Data.Set (fromFoldable, size)
+import Data.Array (foldl, filter, length)
+import Data.Array.NonEmpty (NonEmptyArray, cons, fromArray, head, reverse, singleton, sort, toArray)
+import Data.Maybe (fromMaybe)
+
+last :: forall a. Ord a => NonEmptyArray a -> a
+last = head <<< reverse
+
+arrayMax :: forall a. Ord a => NonEmptyArray a -> a
+arrayMax arr = last $ sort arr
+
+arrayMin :: forall a. Ord a => NonEmptyArray a -> a
+arrayMin arr = head $ sort arr
+
+default :: forall a. Array a -> a -> NonEmptyArray a
+default arr a = fromMaybe (singleton a) (fromArray $ arr)
+
+unique :: forall a. Ord a => Array a -> Boolean
+unique arr = (size $ fromFoldable arr) == (length arr)
 
 range :: Int -> Int -> Array Int
 range lo hi

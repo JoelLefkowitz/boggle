@@ -3,16 +3,13 @@ module Test.Boggle where
 import Prelude
 import Boggle (generateBoggle, verifyBoggle)
 import Effect (Effect)
-import Effect.Console (log)
 import Move (Move(..))
 import Test.Assert (assertEqual)
 
 testBoggle :: Effect Unit
-testBoggle = log "Skipping testBoggle"
-
--- testBoggle = do 
---   testVerifyBoggle
---   testGenerateBoggle
+testBoggle = do
+  testVerifyBoggle
+  testGenerateBoggle
 
 testVerifyBoggle :: Effect Unit
 testVerifyBoggle = do

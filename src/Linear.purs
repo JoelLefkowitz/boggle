@@ -1,14 +1,21 @@
 module Linear where
 
 import Prelude
-import Boundaries (Boundaries, verifyBoundaries)
+import Interfaces (MoveGenerator)
 import Move (Move, moveSingletons)
+import Paths (verifyBoundaries)
 import Sequences (filteredTuples)
 
 verifyLinear :: Array Move -> Boolean
-verifyLinear _ = true
+verifyLinear arr = noCross arr && noOverlap arr
 
-generateLinear :: Int -> Boundaries -> Array (Array Move)
+noCross :: Array Move -> Boolean
+noCross _ = true
+
+noOverlap :: Array Move -> Boolean
+noOverlap _ = true
+
+generateLinear :: MoveGenerator
 generateLinear n bounds = filteredTuples check moveSingletons n
   where
   check x = verifyBoundaries x bounds && verifyLinear x

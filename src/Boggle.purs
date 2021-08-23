@@ -1,14 +1,15 @@
 module Boggle where
 
 import Prelude
-import Boundaries (Boundaries, verifyBoundaries)
+import Interfaces (MoveGenerator)
 import Move (Move, moveSingletons)
-import Sequences (filteredTuples)
+import Paths (traceCoordinates, verifyBoundaries)
+import Sequences (filteredTuples, unique)
 
 verifyBoggle :: Array Move -> Boolean
-verifyBoggle _ = true
+verifyBoggle arr = unique $ traceCoordinates arr
 
-generateBoggle :: Int -> Boundaries -> Array (Array Move)
+generateBoggle :: MoveGenerator
 generateBoggle n bounds = filteredTuples check moveSingletons n
   where
   check x = verifyBoundaries x bounds && verifyBoggle x
