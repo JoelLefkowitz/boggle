@@ -1,38 +1,31 @@
 module Boggle.Solve where
 
+import Prelude
+
+import Boggle.Paths.Boundaries (infer)
+import Boggle.Paths.Coordinates (cartesian, path, trace)
+import Boggle.Paths.Moves (moveSingletons)
+import Boggle.Rules (bounded, noRepeat)
 import Boggle.Utils.Arrays (range)
+import Boggle.Utils.Matrices (Matrix)
+import Boggle.Utils.Sequences (nFiltered)
+import Data.Array (filter)
+import Data.Set (Set, fromFoldable)
+import Data.String.CodeUnits (fromCharArray)
 
 infix 8 range as ..
 
--- width :: forall a. Array (Array a) -> Int
--- width matrix = 0
+foreign import isWord :: String -> Boolean
 
--- height :: forall a. Array (Array a) -> Int
--- height matrix = 0
+routes :: Matrix Char -> Int -> Array String
+routes mat n = do
+  pos <- cartesian mat
+  pattern <- nFiltered (\x -> check pos x) moveSingletons (n - 1)
+  pure $ fromCharArray $ path mat '_' ((\x -> x + pos) <$> (trace pattern))
+  where
+  check pos pattern = (noRepeat pattern) && (bounded pattern $ infer mat pos)
 
--- inferBoundaries :: Int -> Int -> Coordinates -> Boundaries
--- inferBoundaries width height pos = { r: 0, l: 0, u: 0, d: 0 }
-
--- fillRectangle :: Array (Array Char) -> Array (Array Char)
--- fillRectangle martix = martix
-
--- solve :: MoveGenerator -> Array (Array Char) -> Int -> Array String
--- solve generator matrix n = do
---   x <- range 0 w
---   y <- range 0 h
---   remapMoves (fillRectangle matrix) (validMoves { x, y })
---   where
---   w = width matrix
---   h = height matrix
---   validMoves pos = generator n (inferBoundaries w h pos)
-
--- solve :: Array (Array Char) -> Int -> Array String
--- solve matrix n = do
---   coordinate <- cartesian matrix
---   fromCharArray $ mapMoves matrix $ genereate n boundaries matrix coordinate
-
--- remapMoves :: Array (Array Char) -> Array (Array Move) -> Array String
--- remapMoves matrix moves = []
-
--- generate :: Int -> Boundaries -> Array Move
--- generate n bounds = filteredTuples (validPath bounds) moveSingletons n
+words :: Matrix Char -> Int -> Set String
+words mat max = fromFoldable $ filter isWord do
+    n <- 0 .. (max + 1)
+    routes mat n
