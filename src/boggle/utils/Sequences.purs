@@ -29,6 +29,8 @@ nFiltered ::
 nFiltered check arr n
   | n <= 0 = []
   | n == 1 = filter check arr
-  | otherwise = foldl checked arr $ fill arr (n - 1)
-    where
-    checked acc x = filter check $ product acc x
+  | otherwise = filter check $ product arr (nFiltered check arr (n - 1))
+
+-- | otherwise = foldl checked arr $ fill arr (n - 1)
+--   where
+--   checked acc x = filter check $ product acc x
