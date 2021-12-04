@@ -1,15 +1,20 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
+const Spellchecker = require('hunspell-spellchecker');
 
-var Spellchecker = require('hunspell-spellchecker');
-var spellchecker = new Spellchecker();
+const spellchecker = new Spellchecker();
 
-var DICT = spellchecker.parse({
-  aff: fs.readFileSync('./en_EN.aff'),
-  dic: fs.readFileSync('./en_EN.dic'),
+const dicts = path.join(__dirname, 'dicts');
+
+const DICT = spellchecker.parse({
+  aff: fs.readFileSync(path.join(dicts, 'en_US.aff')),
+  dic: fs.readFileSync(path.join(dicts, 'en_US.dic')),
 });
 
 spellchecker.use(DICT);
 
-exports.isWord = (word) => spellchecker.check(word);
+exports.isWord = function (word) {
+  return spellchecker.check(word);
+};

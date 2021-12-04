@@ -1,0 +1,33 @@
+{
+    "name": "purescript-boggle",
+    "version": "0.1.0",
+    "description": "Boggle solver.",
+    "homepage": "https://github.com/JoelLefkowitz/purescript-boggle",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JoelLefkowitz/purescript-boggle"
+    },
+    "ignore": [
+        "**/.*",
+        "bower_components",
+        "node_modules",
+        "output",
+        "test",
+        "bower.json",
+        "package.json"
+    ],
+    "dependencies": {
+        "purescript-prelude": "^5.0.1",
+        "purescript-arrays": "^6.0.1",
+        "purescript-foldable-traversable": "^5.0.1",
+        "purescript-strings": "^5.0.0",
+        "purescript-effect": "^3.0.0",
+        "purescript-console": "^5.0.0",
+        "purescript-ordered-collections": "^2.0.2"
+    },
+    "devDependencies": {
+        "purescript-debug": "^5.0.0",
+        "purescript-psci-support": "^5.0.0"
+    }
+}

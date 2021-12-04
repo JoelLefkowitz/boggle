@@ -1,0 +1,30 @@
+collections:
+  - common
+  - purescript
+
+excludes:
+  - .cspell.json
+  - README.md
+  - bower.json
+  - package.json
+  - spago.dhall
+
+render_context:
+  project:
+    name: purescript-boggle
+    description: Boggle solver.
+    version: 0.1.0
+    verbose_name: PureScript Boggle
+    repository: https://github.com/JoelLefkowitz/purescript-boggle
+    codacy_id: ec080f55abf241a5bc4921f349bf6264
+
+  author:
+    author: joellefkowitz
+    author_email: joellefkowitz@hotmail.com
+    verbose_author: Joel Lefkowitz
+
+clear_top_level: true
+logical_grouping: true
+
+loader_paths:
+  - docs

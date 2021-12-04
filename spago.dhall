@@ -1,16 +1,16 @@
-{ name = "boggle"
+{ name = "purescript-boggle"
+, version = "0.1.0"
+, repository = "https://github.com/JoelLefkowitz/purescript-boggle"
+, license = "MIT"
 , dependencies =
-  [ "assert"
+  [ "arrays"
   , "console"
-  , "debug"
   , "effect"
-  , "linear-algebra"
-  , "node-fs"
+  , "foldable-traversable"
   , "ordered-collections"
-  , "psci-support"
+  , "prelude"
   , "strings"
-  , "stringutils"
   ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs", "test/**/*.purs" ]
+, sources = [ "src/**/*.purs" ]
 }
