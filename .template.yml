@@ -5,6 +5,7 @@ collections:
 excludes:
   - .cspell.json
   - README.md
+  - Gruntfile.js
   - bower.json
   - package.json
   - spago.dhall

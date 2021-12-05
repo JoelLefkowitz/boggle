@@ -1,8 +1,7 @@
 module Test.Boggle.Solve where
 
-import Data.Set (fromFoldable)
 import Prelude
-import Boggle.Solve (words, routes)
+import Boggle.Solve (routes)
 import Boggle.Utils.Matrices (Matrix(..))
 import Effect (Effect)
 import Effect.Console (log)
