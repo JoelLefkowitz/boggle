@@ -3,14 +3,14 @@
 , repository = "https://github.com/JoelLefkowitz/purescript-boggle"
 , license = "MIT"
 , dependencies =
-  [ "arrays"
-  , "console"
-  , "effect"
-  , "foldable-traversable"
-  , "ordered-collections"
-  , "prelude"
-  , "strings"
-  ]
+    [ "arrays"
+    , "console"
+    , "effect"
+    , "foldable-traversable"
+    , "ordered-collections"
+    , "prelude"
+    , "strings"
+    ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 }
