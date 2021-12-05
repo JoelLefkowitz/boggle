@@ -14,7 +14,7 @@ render_context:
   project:
     name: purescript-boggle
     description: Boggle solver.
-    version: 0.1.0
+    version: 0.1.1
     verbose_name: PureScript Boggle
     repository: https://github.com/JoelLefkowitz/purescript-boggle
     codacy_id: ec080f55abf241a5bc4921f349bf6264

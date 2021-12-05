@@ -1,5 +1,5 @@
 { name = "purescript-boggle"
-, version = "0.1.0"
+, version = "0.1.1"
 , repository = "https://github.com/JoelLefkowitz/purescript-boggle"
 , license = "MIT"
 , dependencies =

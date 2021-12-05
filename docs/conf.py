@@ -9,7 +9,7 @@ sys.path.append("..")
     Sphinx core settings
 """
 project = "purescript-boggle"
-version = "0.1.0"
+version = "0.1.1"
 author = "Joel Lefkowitz"
 master_doc = "index"
 
