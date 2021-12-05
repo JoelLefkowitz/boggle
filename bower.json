@@ -18,7 +18,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-arrays": "^6.0.1",en
+    "purescript-arrays": "^6.0.1",
     "purescript-console": "^5.0.0",
     "purescript-effect": "^3.0.0",
     "purescript-foldable-traversable": "^5.0.1",
