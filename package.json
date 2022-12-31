@@ -21,5 +21,17 @@
   },
   "dependencies": {
     "hunspell-spellchecker": "^1.0.2"
-  }
+  },
+  "metadata": {
+    "documentation": "https://purescript-boggle.readthedocs.io/en/latest",
+    "languages": [
+        "PureScript"
+      ],
+      "frameworks": [],
+      "paradigms": [
+        "Functional"
+      ],
+      "lifecycle": "Alpha",
+      "publisher": "Pursuit"
+    }
 }
