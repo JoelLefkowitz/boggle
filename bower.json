@@ -1,12 +1,12 @@
 {
-  "name": "purescript-boggle",
-  "version": "0.1.1",
+  "name": "boggle",
   "description": "Boggle solver.",
-  "homepage": "https://github.com/JoelLefkowitz/purescript-boggle",
+  "version": "0.1.1",
+  "homepage": "https://github.com/JoelLefkowitz/boggle",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoelLefkowitz/purescript-boggle"
+    "url": "https://github.com/JoelLefkowitz/boggle"
   },
   "ignore": [
     "**/.*",
