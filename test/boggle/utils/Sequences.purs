@@ -1,7 +1,6 @@
 module Test.Boggle.Utils.Sequences where
 
 import Prelude
-
 import Boggle.Utils.Sequences (nFiltered, nTuples, product)
 import Effect (Effect)
 import Effect.Console (log)

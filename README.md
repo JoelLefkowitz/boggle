@@ -1,20 +1,20 @@
-# PureScript Boggle
+# Boggle
 
 Boggle solver.
 
 ## Status
 
-| Source     | Shields                                                                                                                                      |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Project    | ![release][release_shield] ![license][license_shield] ![lines][lines_shield] ![languages][languages_shield]                                  |
-| Health     | ![readthedocs][readthedocs_shield] ![github_review][github_review_shield]![codacy][codacy_shield] ![codacy_coverage][codacy_coverage_shield] |
-| Repository | ![issues][issues_shield] ![issues_closed][issues_closed_shield] ![pulls][pulls_shield] ![pulls_closed][pulls_closed_shield]                  |
-| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield]                           |
+| Source     | Shields                                                       |
+| ---------- | ------------------------------------------------------------- |
+| Project    | ![latest_release] ![license] ![line_count] ![language_count]  |
+| Health     | ![documentation] ![review_action] ![codacy_quality]           |
+| Repository | ![open_issues] ![closed_issues] ![open_pulls] ![closed_pulls] |
+| Activity   | ![contributors] ![monthly_commits] ![last_commit]             |
 
-## Installing
+## Installation
 
 ```bash
-spago install purescript-boggle
+bower install purescript-boggle
 ```
 
 ## Tests
@@ -22,38 +22,38 @@ spago install purescript-boggle
 To run tests:
 
 ```bash
-grunt test
+pulp test
 ```
 
 ## Documentation
 
-This repository's documentation is hosted on [readthedocs][readthedocs].
+This repository's documentation is hosted on [Pursuit](https://pursuit.purescript.org/packages/purescript-boggle).
 
-## Tooling
+## Linters
 
 To run linters:
 
 ```bash
-grunt lint
+nps lint
 ```
+
+## Formatters
 
 To run formatters:
 
 ```bash
-grunt format
+nps format
 ```
 
 ## Continuous integration
 
-This repository uses github actions to lint and test each commit. Formatting tasks and writing/generating documentation must be done before committing new code.
+This repository uses GitHub Actions to lint and test each commit. Each commit should be formatted and its corresponding documentation should be updated.
 
 ## Versioning
 
-This repository adheres to semantic versioning standards.
-For more information on semantic versioning visit [SemVer][semver].
+This repository adheres to semantic versioning standards. For more information on semantic versioning visit [semver](https://semver.org).
 
-Bump2version is used to version and tag changes.
-For example:
+Bump2version is used to version and tag changes. For example:
 
 ```bash
 bump2version patch
@@ -69,54 +69,29 @@ Please read this repository's guidelines on [contributing](CONTRIBUTING.md) for 
 
 ## Contributors
 
-- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][author]
-
-[![Buy Me A Coffee][coffee_button]][author_coffee]
+- [Joel Lefkowitz](https://github.com/joellefkowitz) - Initial work
 
 ## Remarks
 
 Lots of love to the open source community!
 
-![Be kind][be_kind]
+<p align='center'>
+    <img width=200 height=200 src='https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif' alt='Be kind to your mind' />
+    <img width=200 height=200 src='https://media.giphy.com/media/KEAAbQ5clGWJwuJuZB/giphy.gif' alt='Love each other' />
+    <img width=200 height=200 src='https://media.giphy.com/media/WRWykrFkxJA6JJuTvc/giphy.gif' alt="It's ok to have a bad day" />
+</p>
 
-<!-- Project links -->
-
-[readthedocs]: https://purescript-boggle.readthedocs.io/en/latest/
-
-<!-- External links -->
-
-[semver]: http://semver.org/
-[be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
-
-<!-- Contributor links -->
-
-[author]: https://github.com/joellefkowitz
-[author_coffee]: https://www.buymeacoffee.com/joellefkowitz
-[coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
-
-<!-- Project shields -->
-
-[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/purescript-boggle
-[license_shield]: https://img.shields.io/github/license/joellefkowitz/purescript-boggle
-[lines_shield]: https://img.shields.io/tokei/lines/github/joellefkowitz/purescript-boggle
-[languages_shield]: https://img.shields.io/github/languages/count/joellefkowitz/purescript-boggle
-
-<!-- Health shields -->
-
-[readthedocs_shield]: https://img.shields.io/readthedocs/purescript-boggle
-[github_review_shield]: https://img.shields.io/github/workflow/status/JoelLefkowitz/purescript-boggle/Review
-[codacy_shield]: https://img.shields.io/codacy/grade/ec080f55abf241a5bc4921f349bf6264
-[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/ec080f55abf241a5bc4921f349bf6264
-
-<!-- Repository shields -->
-
-[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/purescript-boggle
-[issues_closed_shield]: https://img.shields.io/github/issues-closed/joellefkowitz/purescript-boggle
-[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/purescript-boggle
-[pulls_closed_shield]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/purescript-boggle
-
-<!-- Activity shields -->
-
-[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/purescript-boggle
-[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/purescript-boggle
-[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/purescript-boggle
+[latest_release]: https://img.shields.io/github/v/tag/joellefkowitz/purescript-boggle "Latest release"
+[license]: https://img.shields.io/github/license/joellefkowitz/purescript-boggle "License"
+[line_count]: https://img.shields.io/tokei/lines/github/joellefkowitz/purescript-boggle "Line count"
+[language_count]: https://img.shields.io/github/languages/count/joellefkowitz/purescript-boggle "Language count"
+[documentation]: https://pursuit.purescript.org/packages/purescript-boggle/badge "Documentation"
+[review_action]: https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/purescript-boggle/review.yml "Review action"
+[codacy_quality]: https://img.shields.io/codacy/grade/ec080f55abf241a5bc4921f349bf6264 "Codacy quality"
+[open_issues]: https://img.shields.io/github/issues/joellefkowitz/purescript-boggle "Open issues"
+[closed_issues]: https://img.shields.io/github/issues-closed/joellefkowitz/purescript-boggle "Closed issues"
+[open_pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/purescript-boggle "Open pull requests"
+[closed_pulls]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/purescript-boggle "Closed pull requests"
+[contributors]: https://img.shields.io/github/contributors/joellefkowitz/purescript-boggle "Contributors"
+[monthly_commits]: https://img.shields.io/github/commit-activity/m/joellefkowitz/purescript-boggle "Monthly commits"
+[last_commit]: https://img.shields.io/github/last-commit/joellefkowitz/purescript-boggle "Last commit"

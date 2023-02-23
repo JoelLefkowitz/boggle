@@ -20,11 +20,11 @@ testNoRepeat = do
     , expected: true
     }
   assertEqual
-    { actual: noRepeat [R]
+    { actual: noRepeat [ R ]
     , expected: true
     }
   assertEqual
-    { actual: noRepeat [R, L]
+    { actual: noRepeat [ R, L ]
     , expected: false
     }
 

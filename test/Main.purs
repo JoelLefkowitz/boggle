@@ -1,7 +1,6 @@
 module Test.Main where
 
 import Prelude
-
 import Effect (Effect)
 import Test.Boggle.Paths.Boundaries (testBoundaries)
 import Test.Boggle.Paths.Coordinates (testCoordinates)

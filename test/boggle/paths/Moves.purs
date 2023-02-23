@@ -1,7 +1,6 @@
 module Test.Boggle.Paths.Moves where
 
 import Prelude
-
 import Boggle.Paths.Moves (Move(..))
 import Effect (Effect)
 import Effect.Console (log)

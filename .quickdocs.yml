@@ -1,7 +1,0 @@
-project: purescript-boggle
-version: 0.1.1
-author: Joel Lefkowitz
-verbose_name: PureScript Boggle
-html_title: PureScript Boggle
-github_url: https://github.com/JoelLefkowitz/purescript-boggle
-apidoc_module_dir: src

@@ -1,7 +1,6 @@
 module Test.Boggle.Paths.Boundaries where
 
 import Prelude
-
 import Boggle.Paths.Boundaries (contains, extrema)
 import Effect (Effect)
 import Effect.Console (log)

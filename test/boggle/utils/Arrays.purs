@@ -1,7 +1,6 @@
 module Test.Boggle.Utils.Arrays where
 
 import Prelude
-
 import Boggle.Utils.Arrays (fill, range, shift, unique)
 import Effect (Effect)
 import Effect.Class.Console (log)

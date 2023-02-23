@@ -21,10 +21,10 @@ instance showMatrix :: Show a => Show (Matrix a) where
       <> ", data="
       <> show ds
 
-nrows :: forall a. Matrix a -> Int 
+nrows :: forall a. Matrix a -> Int
 nrows (Dense r _ _) = r
 
-ncols :: forall a. Matrix a -> Int 
+ncols :: forall a. Matrix a -> Int
 ncols (Dense _ c _) = c
 
 pad :: forall a. Int -> Array a -> a -> Array a
