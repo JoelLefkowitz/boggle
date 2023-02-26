@@ -25,7 +25,7 @@
     "purescript-arrays": "^6.0.0",
     "purescript-console": "^5.0.0",
     "purescript-effect": "^3.0.0",
-    "foldable-traversable": ">=5.0.1 <6.0.0",
+    "purescript-foldable-traversable": "^5.0.1",
     "purescript-ordered-collections": "^2.0.2",
     "purescript-prelude": "^5.0.1",
     "purescript-strings": "^5.0.0"
