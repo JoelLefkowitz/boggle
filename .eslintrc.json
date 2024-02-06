@@ -3,7 +3,5 @@
   "extends": ["eslint:recommended", "prettier"],
   "env": { "es6": true, "node": true },
   "ignorePatterns": ["dist", "generated-docs", "output"],
-  "parserOptions": {
-    "sourceType": "module"
-  }
+  "parserOptions": { "sourceType": "module" }
 }
