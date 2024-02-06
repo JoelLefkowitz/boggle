@@ -2,7 +2,7 @@ package:
   name: boggle
   description: Boggle solver.
   publish:
-    version: 0.1.1
+    version: 0.1.2
     license: MIT
     location:
       githubOwner: joellefkowitz
