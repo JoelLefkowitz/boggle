@@ -1,6 +1,13 @@
 package:
   name: boggle
   description: Boggle solver.
+  repository: https://github.com/JoelLefkowitz/boggle
+  homepage: https://joellefkowitz.github.io/boggle
+  keywords:
+    - boggle
+    - solver
+    - permutations
+
   publish:
     version: 0.1.2
     license: MIT
@@ -26,7 +33,19 @@ package:
   bundle:
     extra_args:
       - --minify
-      - --outfile=dist/bundle.js
+      - --outfile=dis/bundle.js
+
+
+metadata:
+  publisher: Pursuit
+  languages:
+    - PureScript
+
+  frameworks: []
+  paradigms:
+    - Functional
+
+  lifecycle: Pre-alpha
 
 workspace:
   package_set:

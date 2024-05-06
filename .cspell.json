@@ -1,33 +1,35 @@
 {
   "language": "en",
-  "ignorePaths": [
-    ".git",
-    ".gitignore",
-    ".husky",
-    ".spago",
-    "*.aff",
-    "*.dic",
-    "coverage",
-    "dist",
-    "generated-docs",
-    "output",
-    "yarn-error.log"
+  "dictionaries": [
+    "aws",
+    "bash",
+    "en-gb",
+    "fullstack",
+    "misc",
+    "softwareTerms"
   ],
-  "dictionaries": ["bash", "en-gb", "misc", "node", "softwareTerms"],
+  "ignorePaths": [".git", "dicts"],
   "words": [
     "bumpversion",
     "codacy",
+    "corepack",
+    "dhall",
     "foldl",
     "forall",
+    "giphy",
     "joellefkowitz",
     "lefkowitz",
     "ncols",
+    "newtype",
     "nrows",
     "outfile",
     "purescript",
     "purs",
     "purty",
+    "repr",
     "spago",
+    "stringutils",
+    "trufflehog",
     "unfoldable"
   ]
 }
