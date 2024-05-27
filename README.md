@@ -6,7 +6,7 @@ Boggle solver.
 ![Version](https://pursuit.purescript.org/packages/purescript-boggle/badge)
 ![Quality](https://img.shields.io/codacy/grade/ec080f55abf241a5bc4921f349bf6264)
 
-## Installation
+## Installing
 
 ```bash
 spago install boggle
