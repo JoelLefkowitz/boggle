@@ -12,6 +12,22 @@ Boggle solver.
 spago install boggle
 ```
 
+## Usage
+
+```purs
+import Data.Matrix (Matrix(..))
+import Data.Word (boggle)
+
+boggle (Matrix [ [ "a", "b" ], [ "c", "d" ] ]) 4
+
+>>> [
+  { path: [ { x: 0, y: 1 }, { x: 0, y: 0 }, { x: 1, y: 0 } ], word: "cab" },
+  { path: [ { x: 0, y: 1 }, { x: 0, y: 0 }, { x: 1, y: 1 } ], word: "cad" },
+  { path: [ { x: 1, y: 0 }, { x: 0, y: 0 }, { x: 1, y: 1 } ], word: "bad" },
+  { path: [ { x: 1, y: 1 }, { x: 0, y: 0 }, { x: 1, y: 0 } ], word: "dab" },
+]
+```
+
 ## Documentation
 
 Documentation and more detailed examples are hosted on [Github Pages](https://joellefkowitz.github.io/boggle).

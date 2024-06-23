@@ -31,7 +31,7 @@ package:
       - debug
 
   bundle:
-    extra_args:
+    extraArgs:
       - --minify
       - --outfile=dis/bundle.js
 
@@ -47,5 +47,5 @@ metadata:
   lifecycle: Pre-alpha
 
 workspace:
-  package_set:
+  packageSet:
     registry: 41.2.0

@@ -24,6 +24,8 @@
     "outfile",
     "purescript",
     "purs",
+    "snoc",
+    "newtype",
     "purty",
     "spago",
     "trufflehog",

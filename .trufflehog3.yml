@@ -28,6 +28,7 @@ exclude:
     paths:
       - generated-docs
       - output
+      - package-lock.json
       - spago.lock
       - yarn-error.log
       - yarn.lock
