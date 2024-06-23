@@ -5,10 +5,10 @@ import Data.Sequences (max, pad)
 import Data.Coordinates (Coordinates, next)
 import Data.Array as Array
 import Control.Alternative (guard)
-import Data.Array (elem, filter, foldl, length, snoc, singleton, (..))
+import Data.Array (filter, foldl, length, snoc, singleton, (..))
 import Data.Array.NonEmpty (cons')
 import Data.String (joinWith)
-import Data.Maybe (Maybe, isJust)
+import Data.Maybe (Maybe, fromMaybe, isJust)
 
 newtype Matrix a
   = Matrix (Array (Array a))
@@ -34,6 +34,9 @@ index (Matrix rows) { x, y } = do
   row <- Array.index rows y
   Array.index row x
 
+elem :: ∀ a. Matrix a -> a -> Coordinates -> a
+elem m d x = fromMaybe d $ index m x
+
 contains :: ∀ a. Matrix a -> Coordinates -> Boolean
 contains m x = isJust $ index m x
 
@@ -45,7 +48,7 @@ points m = do
   pure { x, y }
 
 steps :: ∀ a. Matrix a -> Array Coordinates -> Array (Array Coordinates)
-steps m arr = snoc arr <$> (filter (\x -> contains m x && not elem x arr) $ next arr)
+steps m arr = snoc arr <$> (filter (\x -> contains m x && not Array.elem x arr) $ next arr)
 
 paths :: ∀ a. Matrix a -> Int -> Array (Array Coordinates)
 paths m n
