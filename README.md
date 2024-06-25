@@ -30,7 +30,7 @@ boggle (Matrix [ [ "a", "b" ], [ "c", "d" ] ]) 4
 
 ## Documentation
 
-Documentation and more detailed examples are hosted on [Github Pages](https://joellefkowitz.github.io/boggle).
+Documentation and more detailed examples are hosted on [Pursuit](https://pursuit.purescript.org/packages/purescript-boggle).
 
 ## Tooling
 

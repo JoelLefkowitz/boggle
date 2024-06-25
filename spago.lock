@@ -5,9 +5,10 @@ workspace:
       dependencies:
         - arrays: ">=6.0.0 <7.0.0"
         - console: ">=5.0.0 <6.0.0"
+        - control: ">=6.0.0 <7.0.0"
         - effect: ">=3.0.0 <4.0.0"
         - foldable-traversable: ">=5.0.1 <6.0.0"
-        - ordered-collections: ">=2.0.2 <3.0.0"
+        - maybe: ">=6.0.0 <7.0.0"
         - prelude: ">=5.0.1 <6.0.0"
         - strings: ">=5.0.0 <6.0.0"
       test_dependencies:
@@ -34,13 +35,10 @@ workspace:
         - identity
         - integers
         - invariant
-        - lazy
-        - lists
         - maybe
         - newtype
         - nonempty
         - numbers
-        - ordered-collections
         - orders
         - partial
         - prelude
@@ -705,32 +703,6 @@ packages:
     dependencies:
       - control
       - prelude
-  lazy:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-lMsfFOnlqfe4KzRRiW8ot5ge6HtcU3Eyh2XkXcP5IgU=
-    dependencies:
-      - control
-      - foldable-traversable
-      - invariant
-      - prelude
-  lists:
-    type: registry
-    version: 7.0.0
-    integrity: sha256-EKF15qYqucuXP2lT/xPxhqy58f0FFT6KHdIB/yBOayI=
-    dependencies:
-      - bifunctors
-      - control
-      - foldable-traversable
-      - lazy
-      - maybe
-      - newtype
-      - nonempty
-      - partial
-      - prelude
-      - tailrec
-      - tuples
-      - unfoldable
   maybe:
     type: registry
     version: 6.0.0
@@ -765,22 +737,6 @@ packages:
     dependencies:
       - functions
       - maybe
-  ordered-collections:
-    type: registry
-    version: 3.1.1
-    integrity: sha256-boSYHmlz4aSbwsNN4VxiwCStc0t+y1F7BXmBS+1JNtI=
-    dependencies:
-      - arrays
-      - foldable-traversable
-      - gen
-      - lists
-      - maybe
-      - partial
-      - prelude
-      - st
-      - tailrec
-      - tuples
-      - unfoldable
   orders:
     type: registry
     version: 6.0.0
