@@ -429,9 +429,9 @@ __metadata:
   linkType: hard
 
 "@cspell/dict-software-terms@npm:^3.4.6":
-  version: 3.4.7
-  resolution: "@cspell/dict-software-terms@npm:3.4.7"
-  checksum: 10c0/516b5fee9d41c7ec0cfcc06e953d29c7c78c6d83f76966eaf85d5b487c9a6c5bfc93d1440a0039fa1c363412fdbe57b664ad6425a77ab0ec11835ebfde1eeab2
+  version: 3.4.8
+  resolution: "@cspell/dict-software-terms@npm:3.4.8"
+  checksum: 10c0/666d4db8d8f59a28249b5f627c336cd7ba84b3e5ab8f4911654b9b94682696b6fa0c11bd94ea214f6e2a8f2f37eafb6a2603cc8dc6ce8fa37d05a0642557afab
   languageName: node
   linkType: hard
 
@@ -3801,8 +3801,8 @@ __metadata:
   linkType: hard
 
 "spago@npm:^0.93.0":
-  version: 0.93.32
-  resolution: "spago@npm:0.93.32"
+  version: 0.93.34
+  resolution: "spago@npm:0.93.34"
   dependencies:
     better-sqlite3: "npm:^11.0.0"
     env-paths: "npm:^3.0.0"
@@ -3824,7 +3824,7 @@ __metadata:
     yaml: "npm:^2.4.5"
   bin:
     spago: bin/bundle.js
-  checksum: 10c0/585b8c766f830c9fb579e9dc58a0e9ebdff6d2645c4077defa23e3a3fbfe5d52ae0fca18e4362e8cfc7b4bfeaa5155b41c727ba5bc56ee126015cb5edfc522fe
+  checksum: 10c0/81010551e995a879d0138669a7fe4c32e915a5265e43fef35f5da5b71b160cc9f23182f0acaa6614a36b58c02074ea2a7c440cb8d9e185344795a31a578bbdd7
   languageName: node
   linkType: hard
 

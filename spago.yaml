@@ -16,12 +16,12 @@ package:
       githubRepo: boggle
 
   dependencies:
-    - arrays: ">=6.0.0 <7.0.0"
+    - arrays: ">=7.0.0 <8.0.0"
     - control: ">=6.0.0 <7.0.0"
     - foldable-traversable: ">=6.0.0 <7.0.0"
     - maybe: ">=6.0.0 <7.0.0"
     - prelude: ">=6.0.1 <7.0.0"
-    - strings: ">=5.0.0 <6.0.0"
+    - strings: ">=6.0.0 <7.0.0"
 
   build:
     pedanticPackages: true
